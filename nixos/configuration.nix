@@ -119,16 +119,30 @@
     };
   };
 
-  services.openssh = {
-    enable = false;
-    settings = {
-      # Opinionated: forbid root login through SSH.
-      PermitRootLogin = "no";
-      # Opinionated: use keys only.
-      # Remove if you want to SSH using passwords
-      PasswordAuthentication = false;
+  services = {
+
+    dnsmasq = {
+      enable = true;
     };
+
+    ollama = {
+      enable = true;
+      acceleration = "rocm";
+    };
+
+    openssh = {
+      enable = false;
+      settings = {
+        # Opinionated: forbid root login through SSH.
+        PermitRootLogin = "no";
+        # Opinionated: use keys only.
+        # Remove if you want to SSH using passwords
+        PasswordAuthentication = false;
+      };
+    };
+
   };
+
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "25.05";

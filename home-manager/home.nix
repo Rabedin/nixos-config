@@ -42,15 +42,126 @@
   home = {
     username = "red";
     homeDirectory = "/home/red";
+    packages = with pkgs; [
+      steam
+      neovim
+      ripgrep
+      gnumake
+      discord
+      grimblast
+      wl-clipboard
+      prismlauncher-unwrapped
+      ranger
+      qbittorrent
+      btop
+      glxinfo
+      pavucontrol
+      wofi
+      freshfetch
+      tmux
+      killall
+      lact
+      obsidian
+      rustup
+      wine
+      wine-wayland
+      swww
+      waypaper
+      eww
+      swaybg
+      pokemonsay
+      fortune
+      gcc
+      pkg-config
+      gtk3
+      pango
+      gtk-layer-shell
+      libdbusmenu-gtk3
+      cairo
+      libgcc
+      glibc
+      socat
+      gawk
+      jq
+      coreutils
+      playerctl
+      lrzip
+      kicad
+      unzip
+      qmk
+      vlc
+      python3
+      bottles
+      docker
+      qdirstat
+    ];
   };
 
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  home.packages = with pkgs; [ 
-    steam 
-    hyprland
-    kitty
-  ];
+  programs = {
+    kitty = {
+      enable = true;
+      settings = {
+        # Theming
+        include = "/home/red/.config/kitty/current-theme.conf";
+        background_opacity = "0.95";
+
+        # Font
+        font_size = 12;
+        font_family = "Iosevka nerd font";
+        bold_font = "auto";
+        italic_font = "auto";
+        bold_italic_font = "auto";
+      };
+    };
+
+    wofi = {
+      enable = true;
+      style = ''
+        * {
+          font-family: Iosevka nerd font;
+          color: #cdd6f4;
+        }
+
+        window {
+          background-color: #1e1e2e;
+          border-style: double;
+          border-width: 4px;
+          border-color: #585b70;
+          padding: 8px;
+          border-radius: 4px;
+        }
+
+        scrolledwindow {
+          padding: 8px;
+        }
+
+        flowboxchild {
+          background-color: #313244;
+          margin-top: 1px;
+          margin-bottom: 1px;
+        }
+
+        entry {
+          background-color: #1e1e2e;
+          border-style: double;
+          border-width: 4px;
+          border-color: #fab387;
+          border-radius: 4px;
+        }
+      '';
+    };
+
+    git = {
+      # enable = true;
+      userName = "Redwanul Abedin";
+      userEmail = "chromeplated@protonmail.com";
+      aliases = {
+        cm = "commit";
+        co = "checkout";
+      };
+    };
+
+  };
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
