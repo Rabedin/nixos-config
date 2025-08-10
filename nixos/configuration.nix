@@ -97,6 +97,10 @@
     inputs.zen-browser.packages."${system}".default
   ];
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.iosevka
+  ];
+
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
@@ -118,6 +122,30 @@
       extraGroups = ["networkmanager" "wheel"];
     };
   };
+
+  # opengl stuff
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    extraPackages = with pkgs; [
+      intel-media-driver
+      intel-vaapi-driver
+      libvdpau-va-gl
+    ];
+  };
+
+  hardware.amdgpu.opencl.enable = true;
+
+  # audio stuff
+  hardware.pulseaudio.enable = false;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
+  security.rtkit.enable = true;
 
   services = {
 
