@@ -136,6 +136,13 @@
 
   hardware.amdgpu.opencl.enable = true;
 
+  # Steam
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+
   # audio stuff
   hardware.pulseaudio.enable = false;
   services.pipewire = {

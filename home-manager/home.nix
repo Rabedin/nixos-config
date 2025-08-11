@@ -44,7 +44,6 @@
     username = "red";
     homeDirectory = "/home/red";
     packages = with pkgs; [
-      steam
       neovim
       ripgrep
       gnumake
