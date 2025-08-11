@@ -82,10 +82,13 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_CA.UTF-8";
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+  # Enable X11 and configure keymap
+  services.xserver = {
+    enable = true;
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
   };
 
   # List packages installed in system profile. To search, run:
@@ -133,6 +136,7 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
+      amdvlk
       intel-media-driver
       intel-vaapi-driver
       libvdpau-va-gl

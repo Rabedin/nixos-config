@@ -50,7 +50,7 @@
       discord
       grimblast
       wl-clipboard
-      prismlauncher-unwrapped
+      prismlauncher
       ranger
       qbittorrent
       btop
@@ -94,6 +94,7 @@
       bottles
       docker
       qdirstat
+      temurin-jre-bin-17 # Java 17
     ];
   };
 
