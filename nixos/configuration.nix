@@ -111,6 +111,11 @@
   ### End of copy paste from original config ###
   ##############################################
 
+  fileSystems."/mnt/NVME2TB" = {
+    device = "/dev/disk/by-uuid/062c5520-43b3-45b9-8557-10f80f5d3f0f";
+    fsType = "ext4";
+  };
+
   networking.hostName = "nixbox";
 
   users.users = {
