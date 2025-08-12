@@ -44,7 +44,6 @@
     username = "red";
     homeDirectory = "/home/red";
     packages = with pkgs; [
-      neovim
       ripgrep
       gnumake
       discord
@@ -99,6 +98,9 @@
   };
 
   programs = {
+    neovim = {
+      enable = true;
+    };
     kitty = {
       enable = true;
       settings = {
