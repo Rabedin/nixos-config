@@ -185,6 +185,9 @@
       };
     };
 
+    tailscale = {
+      enable = true;
+    };
   };
 
 
