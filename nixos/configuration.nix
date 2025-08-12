@@ -124,7 +124,7 @@
   users.users = {
     red = {
       isNormalUser = true;
-      openssh.authorizedKey.keyFiles = [
+      openssh.authorizedKeys.keyFiles = [
         /etc/nixos/ssh/authorized_keys
       ];
       extraGroups = ["networkmanager" "wheel"];
