@@ -107,6 +107,7 @@
       vimAlias = true;
       plugins = [
         pkgs.vimPlugins.telescope-nvim
+	pkgs.vimPlugins.gruvbox-nvim
       ];
     };
 
