@@ -105,6 +105,7 @@
     kitty = {
       enable = true;
       themeFile = "GruvboxMaterialDarkMedium";
+      shellIntegration.enableZshIntegration = true;
       settings = {
         # Theming
         include = "/home/red/.config/kitty/current-theme.conf";
