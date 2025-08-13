@@ -187,6 +187,14 @@
 
   };
 
+  services = {
+    udiskie = {
+      enable = true;
+      settings = {
+      };
+    };
+  };
+
   # Enable home-manager and git
   programs.home-manager.enable = true;
 

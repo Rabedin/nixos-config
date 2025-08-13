@@ -172,6 +172,10 @@
 
   services = {
 
+    udisks2 = {
+      enable = true;
+    };
+
     dnsmasq = {
       enable = true;
     };
