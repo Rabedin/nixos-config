@@ -125,6 +125,8 @@
 
   networking.hostName = "nixbox";
 
+  programs.zsh.enable = true;
+
   users.users = {
     red = {
       shell = pkgs.zsh;
