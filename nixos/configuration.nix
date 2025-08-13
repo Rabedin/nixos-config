@@ -105,10 +105,14 @@
   ];
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [
+      22
+      80
+      443
+    ];
+  };
 
   ##############################################
   ### End of copy paste from original config ###
@@ -124,8 +128,8 @@
   users.users = {
     red = {
       isNormalUser = true;
-      openssh.authorizedKeys.keyFiles = [
-        /etc/nixos/ssh/authorized_keys
+      openssh.authorizedKeys.keys = [
+        "SHA256:wPOaYpAQSUiZ42HqV6oDLWZz6qfvdbtpsdwpkNzMKjI redwanulabedin"
       ];
       extraGroups = ["networkmanager" "wheel"];
     };
@@ -175,13 +179,13 @@
     };
 
     openssh = {
-      enable = false;
+      enable = true;
       settings = {
         # Opinionated: forbid root login through SSH.
         PermitRootLogin = "no";
         # Opinionated: use keys only.
         # Remove if you want to SSH using passwords
-        PasswordAuthentication = false;
+        # PasswordAuthentication = false;
       };
     };
 

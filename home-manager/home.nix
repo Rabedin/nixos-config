@@ -101,8 +101,10 @@
     neovim = {
       enable = true;
     };
+
     kitty = {
       enable = true;
+      themeFile = "GruvboxMaterialDarkMedium";
       settings = {
         # Theming
         include = "/home/red/.config/kitty/current-theme.conf";
