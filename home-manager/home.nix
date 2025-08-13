@@ -108,6 +108,7 @@
       shellIntegration.enableZshIntegration = true;
       settings = {
         # Theming
+	shell = ".";
         include = "/home/red/.config/kitty/current-theme.conf";
         background_opacity = "0.95";
 
