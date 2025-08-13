@@ -166,6 +166,10 @@
       };
     };
 
+    zsh = {
+      enable = true;
+    };
+
   };
 
   # Enable home-manager and git
