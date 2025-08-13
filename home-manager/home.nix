@@ -103,6 +103,11 @@
       extraConfig = ''
         set number relativenumber
       '';
+      viAlias = true;
+      vimAlias = true;
+      plugins = [
+        pkgs.vimPlugins.telescope-nvim
+      ];
     };
 
     kitty = {
