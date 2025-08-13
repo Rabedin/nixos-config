@@ -127,6 +127,7 @@
 
   users.users = {
     red = {
+      shell = pkgs.zsh;
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
         "SHA256:wPOaYpAQSUiZ42HqV6oDLWZz6qfvdbtpsdwpkNzMKjI redwanulabedin"
