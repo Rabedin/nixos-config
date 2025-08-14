@@ -100,8 +100,13 @@
   programs = {
     neovim = {
       enable = true;
+      defaultEditor = true;
       extraConfig = ''
         set number relativenumber
+      '';
+      extraLuaConfig = ''
+        vim.g.mapleader = " "
+	vim.keymap.set("n", "<leaderpv", vim.cmd.Ex)
       '';
       viAlias = true;
       vimAlias = true;
