@@ -94,6 +94,7 @@
       docker
       qdirstat
       temurin-jre-bin-17 # Java 17
+      webcord
     ];
   };
 
