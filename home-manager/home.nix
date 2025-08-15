@@ -106,7 +106,7 @@
       '';
       extraLuaConfig = ''
         vim.g.mapleader = " "
-	vim.keymap.set("n", "<leaderpv", vim.cmd.Ex)
+	vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
       '';
       viAlias = true;
       vimAlias = true;
