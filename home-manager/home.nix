@@ -195,6 +195,10 @@
       };
     };
 
+    lutris = {
+      enable = true;
+    };
+
   };
 
   services = {
