@@ -97,6 +97,7 @@
       hardinfo2
       stress
       sysbench
+      _7zz
     ];
   };
 
