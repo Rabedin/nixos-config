@@ -95,6 +95,8 @@
       qdirstat
       temurin-jre-bin-17 # Java 17
       hardinfo2
+      stress
+      sysbench
     ];
   };
 
