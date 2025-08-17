@@ -94,7 +94,7 @@
       docker
       qdirstat
       temurin-jre-bin-17 # Java 17
-      webcord
+      hardinfo2
     ];
   };
 
@@ -108,6 +108,7 @@
       extraLuaConfig = ''
         vim.g.mapleader = " "
 	vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+	${builtins.readFile ./nvim/options.lua}
       '';
       viAlias = true;
       vimAlias = true;
