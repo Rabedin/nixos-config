@@ -103,6 +103,7 @@
     wget
     git
     inputs.zen-browser.packages."${system}".default
+    cifs-utils
   ];
 
   fonts.packages = with pkgs; [
@@ -123,9 +124,19 @@
   ### End of copy paste from original config ###
   ##############################################
 
-  fileSystems."/mnt/NVME2TB" = {
-    device = "/dev/disk/by-uuid/062c5520-43b3-45b9-8557-10f80f5d3f0f";
-    fsType = "ext4";
+  fileSystems = {
+    "/mnt/NVME2TB" = {
+      device = "/dev/disk/by-uuid/062c5520-43b3-45b9-8557-10f80f5d3f0f";
+      fsType = "ext4";
+    };
+    "/mnt/redhomeshare" = {
+      device = "//192.168.0.72/redhomeshare";
+      fsType = "cifs";
+      options = let
+        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+      in ["${automount_opts},credentials=/etc/nixos/smb-secrets"];
+    };
   };
 
   networking.hostName = "nixbox";
