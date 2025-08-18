@@ -199,6 +199,10 @@
       enable = true;
     };
 
+    obs = {
+      enable = true;
+    };
+
   };
 
   services = {
