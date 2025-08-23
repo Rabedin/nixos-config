@@ -219,6 +219,10 @@
       };
     };
 
+    open-webui = {
+      enable = true;
+    };
+
     tailscale = {
       enable = true;
     };
