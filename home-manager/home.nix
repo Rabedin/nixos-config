@@ -99,6 +99,7 @@
       stress
       sysbench
       _7zz
+      open-webui
     ];
   };
 
