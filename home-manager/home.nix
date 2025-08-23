@@ -100,6 +100,7 @@
       sysbench
       _7zz
       open-webui
+      godot
     ];
   };
 
