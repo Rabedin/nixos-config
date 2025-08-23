@@ -5,6 +5,7 @@
   lib,
   config,
   pkgs,
+  pkgsUnstable,
   ...
 }: {
   # You can import other home-manager modules here
@@ -99,6 +100,9 @@
       sysbench
       _7zz
     ];
+    ++ (with pkgsUnstable; [
+      open-webui
+      ]);
   };
 
   programs = {
