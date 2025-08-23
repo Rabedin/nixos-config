@@ -24,7 +24,7 @@
     ...
   } @ inputs: let
     inherit (self) outputs;
-    pkgsUnstable = umport nixpkgs-unstable { inherit system; config.allowUnfree = true; };
+    pkgsUnstable = import nixpkgs-unstable { inherit system; config.allowUnfree = true; };
   in {
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
