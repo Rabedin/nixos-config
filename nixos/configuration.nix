@@ -206,6 +206,10 @@
     ollama = {
       enable = true;
       acceleration = "rocm";
+      environmentVariables = {
+        HCC_AMDGPU_TARGET = "gfx1201";
+      };
+      rocmOverrideGfx = "12.0.1";
     };
 
     openssh = {
