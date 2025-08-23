@@ -150,7 +150,7 @@
       openssh.authorizedKeys.keys = [
         "SHA256:wPOaYpAQSUiZ42HqV6oDLWZz6qfvdbtpsdwpkNzMKjI redwanulabedin"
       ];
-      extraGroups = ["networkmanager" "wheel"];
+      extraGroups = ["networkmanager" "wheel" "docker" ];
     };
   };
 
@@ -185,6 +185,13 @@
   };
 
   security.rtkit.enable = true;
+
+  # virtshit
+  virtualisation = {
+    docker = {
+      enable = true;
+    };
+  };
 
   services = {
 
