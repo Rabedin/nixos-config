@@ -4,6 +4,8 @@
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    # Nixpkgs unstable
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-25.05";
@@ -16,6 +18,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     home-manager,
     ...
   } @ inputs: let
