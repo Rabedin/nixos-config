@@ -100,9 +100,6 @@
       sysbench
       _7zz
     ];
-    ++ (with pkgsUnstable; [
-      open-webui
-      ]);
   };
 
   programs = {
