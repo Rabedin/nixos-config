@@ -101,6 +101,7 @@
       _7zz
       open-webui
       godot
+      kdePackages.dolphin
     ];
   };
 
