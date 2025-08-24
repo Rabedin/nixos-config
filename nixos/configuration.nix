@@ -114,27 +114,29 @@
     nerd-fonts.iosevka
   ];
 
-  # Open ports in the firewall.
-  networking.firewall = {
-    enable = true;
-    allowedTCPPorts = [
-      22
-      80
-      443
-      47984
-      47989
-      48010
-    ];
-    allowedUDPPorts = [
-      47999
-      48100
-      48200
-    ];
-  };
-
   ##############################################
   ### End of copy paste from original config ###
   ##############################################
+
+  networking = {
+    firewall = {
+      enable = true;
+      allowedTCPPorts = [
+        22
+        80
+        443
+        47984
+        47989
+        48010
+      ];
+      allowedUDPPorts = [
+        47999
+        48100
+        48200
+      ];
+    };
+
+  };
 
   fileSystems = {
     "/mnt/NVME2TB" = {
