@@ -241,6 +241,11 @@
       enable = true;
     };
 
+    prowlarr = {
+      enable = true;
+      openFirewall = true;
+    };
+
     tailscale = {
       enable = true;
     };
