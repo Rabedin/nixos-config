@@ -101,7 +101,6 @@
       _7zz
       open-webui
       godot
-      ventoy-full
     ];
   };
 
