@@ -37,6 +37,9 @@
     config = {
       # Disable if you don't want unfree packages
       allowUnfree = true;
+      permittedInsecurePackages = [
+        "ventoy-1.1.05"
+      ];
     };
   };
 
