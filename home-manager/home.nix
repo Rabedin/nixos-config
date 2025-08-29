@@ -125,6 +125,10 @@
       ];
     };
 
+    element-desktop = {
+      enable = true;
+    };
+
     kitty = {
       enable = true;
       themeFile = "GruvboxMaterialDarkMedium";
