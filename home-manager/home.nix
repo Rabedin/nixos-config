@@ -102,6 +102,7 @@
       open-webui
       godot
       kdePackages.dolphin
+      gcr
     ];
   };
 
@@ -219,6 +220,10 @@
       settings = {
       };
     };
+  };
+
+  services = {
+    gnome-keyring.enable = true;
   };
 
   # Enable home-manager and git
