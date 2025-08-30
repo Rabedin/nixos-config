@@ -103,6 +103,7 @@
       godot
       kdePackages.dolphin
       gcr
+      osu-lazer-bin
     ];
   };
 
