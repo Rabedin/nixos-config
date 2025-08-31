@@ -104,6 +104,7 @@
       kdePackages.dolphin
       gcr
       osu-lazer-bin
+      r2modman
     ];
   };
 
