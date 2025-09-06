@@ -108,6 +108,7 @@
       gthumb
       kdePackages.gwenview
       fdupes
+      freetube
     ];
   };
 
