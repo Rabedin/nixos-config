@@ -105,6 +105,8 @@
       gcr
       osu-lazer-bin
       r2modman
+      gthumb
+      kdePackages.gwenview
     ];
   };
 
