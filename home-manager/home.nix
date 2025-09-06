@@ -107,6 +107,7 @@
       r2modman
       gthumb
       kdePackages.gwenview
+      fdupes
     ];
   };
 
