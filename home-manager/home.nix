@@ -109,6 +109,7 @@
       fdupes
       freetube
       btrfs-progs
+      wireshark
     ];
   };
 
