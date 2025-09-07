@@ -99,7 +99,6 @@
       stress
       sysbench
       _7zz
-      open-webui
       godot
       kdePackages.dolphin
       gcr

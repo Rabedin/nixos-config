@@ -221,7 +221,7 @@
     };
 
     ollama = {
-      enable = true;
+      enable = false;
       acceleration = "rocm";
       environmentVariables = {
         HCC_AMDGPU_TARGET = "gfx1201";
@@ -241,7 +241,7 @@
     };
 
     open-webui = {
-      enable = true;
+      enable = false;
     };
 
     prowlarr = {
