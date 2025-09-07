@@ -168,7 +168,7 @@
       openssh.authorizedKeys.keys = [
         "SHA256:wPOaYpAQSUiZ42HqV6oDLWZz6qfvdbtpsdwpkNzMKjI redwanulabedin"
       ];
-      extraGroups = ["networkmanager" "wheel" "docker" ];
+      extraGroups = ["networkmanager" "wheel" "docker" "wireshark" ];
     };
   };
 
