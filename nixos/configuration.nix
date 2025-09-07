@@ -143,6 +143,10 @@
       device = "/dev/disk/by-uuid/062c5520-43b3-45b9-8557-10f80f5d3f0f";
       fsType = "ext4";
     };
+    "/mnt/SATA2TB" = {
+      device = "/dev/disk/by-uuid/2c4da48a-1b21-45b1-b250-45c693c95080";
+      fsType = "ext4";
+    };
     "/mnt/redhomeshare" = {
       device = "//192.168.69.102/redhomeshare";
       fsType = "cifs";
