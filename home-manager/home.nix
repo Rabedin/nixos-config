@@ -108,6 +108,7 @@
       kdePackages.gwenview
       fdupes
       freetube
+      btrfs-progs
     ];
   };
 
