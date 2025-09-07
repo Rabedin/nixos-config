@@ -108,6 +108,7 @@
     ventoy-full
     inputs.zen-browser.packages."${system}".default
     cifs-utils
+    wireshark
   ];
 
   fonts.packages = with pkgs; [
