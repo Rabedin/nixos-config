@@ -111,6 +111,8 @@
       btrfs-progs
       wireshark
       protonup-qt
+      iamb
+      floorp
     ];
   };
 
