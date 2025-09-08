@@ -110,6 +110,7 @@
       freetube
       btrfs-progs
       wireshark
+      protonup-qt
     ];
   };
 
